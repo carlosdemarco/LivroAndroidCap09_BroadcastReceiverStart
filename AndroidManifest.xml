@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="br.livro.android.cap9.outros" 
+	android:versionCode="1"
+	android:versionName="1.0.0">
+	<application android:name="@string/app_name" 
+		android:icon="@drawable/icon" 
+		android:theme="@android:style/Theme.Light" 
+		android:label="@string/app_name">
+		<receiver android:name="ReceiverAbrirAplicacao">
+			<intent-filter>
+				<action android:name="ABRIR_APLICACAO_TESTE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</receiver>
+	</application>
+	
+	<uses-sdk android:minSdkVersion="2" />
+</manifest>
